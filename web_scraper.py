@@ -13,9 +13,13 @@ names = []
 #extract the titles and append them in a list
 for name in name_first:
     names.append(name.string)
+    
+#setting name of output file
+title = soup.title.string
+file_name = title + ".txt"
 
 #write titles in a txt file
-with open("python_cours_videos_title.txt" , 'w', encoding='utf-8') as file:
+with open(file_name , 'w', encoding='utf-8') as file:
     for i in range(0,len(names)):
         line = str(str(i +1) + ":" + names[i] + "\n")
         file.write(line)
