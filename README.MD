@@ -4,6 +4,7 @@
  # Description
 ### Dependencies
  * bs4
+ * requests
 
 ### Executing program
 Copy the link of cours and paste it to variable 'url' and than run the program.after scraping the page the result will save in a txt file.
